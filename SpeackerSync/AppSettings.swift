@@ -8,5 +8,5 @@
 
 import Foundation
 
-let SSKFrequency:Int32 = 5000
-let SSKToneLength = 2
+let SSKFrequency:Int32 = 18000
+let SSKToneLength:Double = 2

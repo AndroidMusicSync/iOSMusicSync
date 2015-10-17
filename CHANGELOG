@@ -20,3 +20,12 @@ Version 1.0 (4)
 Verson 1.0 (5)
 - Improved sending signal tone
 - Fixed recieving signal tone
+
+Version 1.0 (6)
+- Added player manager
+- Added drum beat sound
+- Added playing sound after master played 3 tones
+- Fixed calling method after tone has played
+- Added playing sound after after client got the sync
+- Played with the value settings
+

@@ -53,8 +53,14 @@ class ClientViewController: UIViewController, EZMicrophoneDelegate, EZAudioFFTDe
     }
     
     //MARK: Got sync
+    func syncDone() {
+        let path = NSBundle.mainBundle().pathForResource("simple-drum-beat", ofType: "mp3")
+        let url = NSURL(fileURLWithPath: path!)
+        PlayerManager.sharedPlayerManager.play(url)
+    }
+    
     func sync() {
-        print("Sync")
+        NSTimer.scheduledTimerWithTimeInterval(Double(SSKToneLength), target: self, selector: "syncDone", userInfo: nil, repeats: false)
     }
 
     //MARK: Microphone
@@ -65,11 +71,14 @@ class ClientViewController: UIViewController, EZMicrophoneDelegate, EZAudioFFTDe
     
     //MARK: fft
     func fft(fft: EZAudioFFT!, updatedWithFFTData fftData: UnsafeMutablePointer<Float>, bufferSize: vDSP_Length) {
-        if signalCount < 3 && NSDate(timeIntervalSinceNow: -Double(SSKToneLength)).timeIntervalSince1970 > lastSignal && fft.maxFrequency > Float(SSKFrequency - 10) {
+        if signalCount < 3 && NSDate(timeIntervalSinceNow: -Double(SSKToneLength)).timeIntervalSince1970 > lastSignal && fft.maxFrequency > Float(SSKFrequency - 10) && fft.maxFrequency < Float(SSKFrequency + 10) {
             signalCount++
             lastSignal = NSDate().timeIntervalSince1970
+            print(signalCount)
             if signalCount == 3 {
-                sync()
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.sync()
+                })
             }
         }
     }
