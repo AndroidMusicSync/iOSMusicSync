@@ -34,6 +34,13 @@ class ClientViewController: UIViewController, EZMicrophoneDelegate, EZAudioFFTDe
     //MARK: Main
     override func viewDidLoad() {
         super.viewDidLoad()
+        let session = AVAudioSession.sharedInstance()
+        do {
+            try session.setCategory(AVAudioSessionCategoryPlayAndRecord)
+            try session.setActive(true)
+        }
+        catch {
+        }
         
         microphone = EZMicrophone(delegate: self)
         
@@ -45,6 +52,7 @@ class ClientViewController: UIViewController, EZMicrophoneDelegate, EZAudioFFTDe
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         resetCache()
     }

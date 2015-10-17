@@ -15,9 +15,17 @@ class PlayerManager {
     private var player:AVAudioPlayer?
     
     init() {
+        
     }
     
     func play(audioFile:NSURL) {
+        let session = AVAudioSession.sharedInstance()
+        do {
+            try session.setCategory(AVAudioSessionCategoryPlayback)
+            try session.setActive(true)
+        }
+        catch {
+        }
         if let player = player {
             player.stop()
         }
