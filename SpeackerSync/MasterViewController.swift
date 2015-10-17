@@ -28,6 +28,11 @@ class MasterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        PlayerManager.sharedPlayerManager.stop()
+    }
+    
     //MARK: Done Sync
     func syncDone() {
         let path = NSBundle.mainBundle().pathForResource("simple-drum-beat", ofType: "mp3")

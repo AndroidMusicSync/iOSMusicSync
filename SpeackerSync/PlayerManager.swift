@@ -33,4 +33,10 @@ class PlayerManager {
             player.play()
         }
     }
+    
+    func stop() {
+        if let player = player {
+            player.stop()
+        }
+    }
 }

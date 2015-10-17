@@ -29,3 +29,8 @@ Version 1.0 (6)
 - Added playing sound after after client got the sync
 - Played with the value settings
 
+Version 1.0 (7)
+- Added icon files
+- Added stop method for player manager
+- Added stopping song if view is closed
+

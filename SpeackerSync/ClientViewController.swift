@@ -48,6 +48,11 @@ class ClientViewController: UIViewController, EZMicrophoneDelegate, EZAudioFFTDe
         lastSignal = NSDate().timeIntervalSince1970
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        PlayerManager.sharedPlayerManager.stop()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
