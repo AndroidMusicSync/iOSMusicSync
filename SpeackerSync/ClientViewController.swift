@@ -72,7 +72,7 @@ class ClientViewController: UIViewController, EZMicrophoneDelegate, EZAudioFFTDe
     
     //MARK: Got sync
     func syncDone() {
-        let path = NSBundle.mainBundle().pathForResource("simple-drum-beat", ofType: "mp3")
+        let path = NSBundle.mainBundle().pathForResource("jugendhackt", ofType: "mp3")
         let url = NSURL(fileURLWithPath: path!)
         PlayerManager.sharedPlayerManager.play(url)
         resetCache()

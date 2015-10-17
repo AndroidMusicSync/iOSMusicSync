@@ -42,5 +42,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
     }
+    
+    func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
+        if let window = window, nav = window.rootViewController as? UINavigationController, vc = nav.viewControllers.first as? ViewController where shortcutItem.type == "de.alexsteiner.SpeackerSync.Master" {
+            vc.performSegueWithIdentifier("showMaster", sender: nil)
+        }
+        else if let window = window, nav = window.rootViewController as? UINavigationController, vc = nav.viewControllers.first as? ViewController where shortcutItem.type == "de.alexsteiner.SpeackerSync.Client" {
+            vc.performSegueWithIdentifier("showClient", sender: nil)
+        }
+    }
 }
 

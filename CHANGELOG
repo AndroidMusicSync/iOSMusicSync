@@ -46,3 +46,8 @@ Version 1.0 (9)
 - Added Halo for the design in the client view
 - Added showing pulsinghalo layer if a height tone has recieved
 - Improved algorithm behind the syncing proccess
+
+Version 1.0 (10)
+- Added cancel timer in master view if view will be dismissed
+- Added homescreen shortcuts
+- Added UITests

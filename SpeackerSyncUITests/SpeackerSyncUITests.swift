@@ -28,6 +28,15 @@ class SpeackerSyncUITests: XCTestCase {
         super.tearDown()
     }
     
+    func testClient() {
+        XCUIApplication().buttons["Client"].tap()
+        
+    }
+    
+    func testMaster() {
+        XCUIApplication().buttons["Master"].tap()
+    }
+    
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.

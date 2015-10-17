@@ -12,10 +12,7 @@ class MasterViewController: UIViewController {
 
     //MARK: Actions
     @IBAction func sync(sender: AnyObject) {
-        if !isPlaying {
-            sync()
-            syncStatusChanged()
-        }
+        sync()
     }
     
     //MARK: Outlets
@@ -47,6 +44,7 @@ class MasterViewController: UIViewController {
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         PlayerManager.sharedPlayerManager.stop()
+        timer?.invalidate()
     }
     
     //MARK: Sync Button
@@ -57,7 +55,7 @@ class MasterViewController: UIViewController {
     
     //MARK: Done Sync
     func syncDone() {
-        guard let path = NSBundle.mainBundle().pathForResource("simple-drum-beat", ofType: "mp3") else { return }
+        guard let path = NSBundle.mainBundle().pathForResource("jugendhackt", ofType: "mp3") else { return }
         let url = NSURL(fileURLWithPath: path)
         PlayerManager.sharedPlayerManager.play(url)
         syncStatusChanged()
@@ -65,7 +63,12 @@ class MasterViewController: UIViewController {
     
     //MARK: Sync
     func sync() {
-        isPlaying = true
+        if !isPlaying {
+            syncStatusChanged()
+        }
+        else {
+            return
+        }
         playSound()
         timer = NSTimer.scheduledTimerWithTimeInterval(SSKToneLength + 1.5, target: self, selector: "playSound", userInfo: nil, repeats: true)
     }

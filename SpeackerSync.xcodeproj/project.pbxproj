@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA4E928C1BD2A1A60008094C /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4E928B1BD2A1A60008094C /* PulsingHaloLayer.m */; settings = {ASSET_TAGS = (); }; };
+		FA4E928E1BD2BA720008094C /* jugendhackt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA4E928D1BD2BA720008094C /* jugendhackt.mp3 */; settings = {ASSET_TAGS = (); }; };
 		FA5167D71BD2499300780EE3 /* TGSineWaveToneGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5167D41BD2499300780EE3 /* TGSineWaveToneGenerator.m */; settings = {ASSET_TAGS = (); }; };
 		FA5167D81BD2499300780EE3 /* WaveToneGeneratorWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5167D61BD2499300780EE3 /* WaveToneGeneratorWrapper.m */; settings = {ASSET_TAGS = (); }; };
 		FA5167DD1BD24A7000780EE3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FA5167DC1BD24A7000780EE3 /* README.md */; settings = {ASSET_TAGS = (); }; };
@@ -33,7 +34,6 @@
 		FA57D5721BD269F900084E7F /* CHANGELOG in Resources */ = {isa = PBXBuildFile; fileRef = FA57D55E1BD269F900084E7F /* CHANGELOG */; settings = {ASSET_TAGS = (); }; };
 		FA57D5731BD269F900084E7F /* VERSION in Resources */ = {isa = PBXBuildFile; fileRef = FA57D55F1BD269F900084E7F /* VERSION */; settings = {ASSET_TAGS = (); }; };
 		FA57D5751BD26EDC00084E7F /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA57D5741BD26EDC00084E7F /* PlayerManager.swift */; settings = {ASSET_TAGS = (); }; };
-		FA57D5771BD272AF00084E7F /* simple-drum-beat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA57D5761BD272AE00084E7F /* simple-drum-beat.mp3 */; settings = {ASSET_TAGS = (); }; };
 		FA8638AF1BD23EA9006EA47A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8638AE1BD23EA9006EA47A /* AppDelegate.swift */; };
 		FA8638B11BD23EA9006EA47A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8638B01BD23EA9006EA47A /* ViewController.swift */; };
 		FA8638B41BD23EA9006EA47A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8638B21BD23EA9006EA47A /* Main.storyboard */; };
@@ -63,6 +63,7 @@
 /* Begin PBXFileReference section */
 		FA4E928A1BD2A1A60008094C /* PulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingHaloLayer.h; sourceTree = "<group>"; };
 		FA4E928B1BD2A1A60008094C /* PulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingHaloLayer.m; sourceTree = "<group>"; };
+		FA4E928D1BD2BA720008094C /* jugendhackt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jugendhackt.mp3; sourceTree = "<group>"; };
 		FA5167D31BD2499300780EE3 /* TGSineWaveToneGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGSineWaveToneGenerator.h; sourceTree = "<group>"; };
 		FA5167D41BD2499300780EE3 /* TGSineWaveToneGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGSineWaveToneGenerator.m; sourceTree = "<group>"; };
 		FA5167D51BD2499300780EE3 /* WaveToneGeneratorWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveToneGeneratorWrapper.h; sourceTree = "<group>"; };
@@ -108,7 +109,6 @@
 		FA57D55E1BD269F900084E7F /* CHANGELOG */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG; sourceTree = "<group>"; };
 		FA57D55F1BD269F900084E7F /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
 		FA57D5741BD26EDC00084E7F /* PlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
-		FA57D5761BD272AE00084E7F /* simple-drum-beat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "simple-drum-beat.mp3"; sourceTree = "<group>"; };
 		FA8638AB1BD23EA9006EA47A /* SpeackerSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeackerSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8638AE1BD23EA9006EA47A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA8638B01BD23EA9006EA47A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -247,8 +247,8 @@
 		FA8638AD1BD23EA9006EA47A /* SpeackerSync */ = {
 			isa = PBXGroup;
 			children = (
-				FA5167DE1BD24B4700780EE3 /* AppSettings.swift */,
 				FA8638AE1BD23EA9006EA47A /* AppDelegate.swift */,
+				FA5167DE1BD24B4700780EE3 /* AppSettings.swift */,
 				FA8638B01BD23EA9006EA47A /* ViewController.swift */,
 				FA57D53A1BD2689200084E7F /* MasterViewController.swift */,
 				FA57D53C1BD2695E00084E7F /* ClientViewController.swift */,
@@ -256,8 +256,8 @@
 				FA8638B21BD23EA9006EA47A /* Main.storyboard */,
 				FA8638B81BD23EA9006EA47A /* Assets.xcassets */,
 				FA8638BA1BD23EA9006EA47A /* LaunchScreen.storyboard */,
+				FA4E928D1BD2BA720008094C /* jugendhackt.mp3 */,
 				FA8638BD1BD23EA9006EA47A /* Info.plist */,
-				FA57D5761BD272AE00084E7F /* simple-drum-beat.mp3 */,
 				FA5167D21BD2496300780EE3 /* Libraries */,
 			);
 			path = SpeackerSync;
@@ -387,9 +387,9 @@
 			files = (
 				FA8638BC1BD23EA9006EA47A /* LaunchScreen.storyboard in Resources */,
 				FA57D5731BD269F900084E7F /* VERSION in Resources */,
-				FA57D5771BD272AF00084E7F /* simple-drum-beat.mp3 in Resources */,
 				FA8638B91BD23EA9006EA47A /* Assets.xcassets in Resources */,
 				FA8638B41BD23EA9006EA47A /* Main.storyboard in Resources */,
+				FA4E928E1BD2BA720008094C /* jugendhackt.mp3 in Resources */,
 				FA5167DD1BD24A7000780EE3 /* README.md in Resources */,
 				FA57D5721BD269F900084E7F /* CHANGELOG in Resources */,
 			);
