@@ -35,3 +35,7 @@ Version 1.0 (7)
 - Added stopping song if view is closed
 - Improved design of home view
 - Added safty for the master client for not syncing two times
+
+Version 1.0 (8)
+- Added waiting between sync and playing song
+- Improved design of master and client views

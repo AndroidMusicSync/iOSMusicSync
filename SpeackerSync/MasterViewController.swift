@@ -10,17 +10,26 @@ import UIKit
 
 class MasterViewController: UIViewController {
 
+    //MARK: Actions
     @IBAction func sync(sender: AnyObject) {
         if !isPlaying {
             sync()
         }
+        syncButton.enabled = !isPlaying
     }
     
+    //MARK: Outlets
+    @IBOutlet weak var syncButton: UIButton!
+    
+    
+    //MARK: Attributes
     let wrapper = WaveToneGeneratorWrapper()
     var playNumber = 0
     var timer:NSTimer?
     var isPlaying = false
     
+    
+    //MARK: Main
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -61,7 +70,7 @@ class MasterViewController: UIViewController {
         if let timer = timer where playNumber > 2 {
             timer.invalidate()
             playNumber = 0
-            NSTimer.scheduledTimerWithTimeInterval(SSKToneLength + 0.05, target: self, selector: "syncDone", userInfo: nil, repeats: false)
+            NSTimer.scheduledTimerWithTimeInterval(SSKToneLength + 1.05, target: self, selector: "syncDone", userInfo: nil, repeats: false)
         }
     }
 

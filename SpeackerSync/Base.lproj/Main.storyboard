@@ -21,8 +21,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AbI-X9-cxN">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZI-wh-bLz">
-                                        <rect key="frame" x="179" y="100" width="244" height="102"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZI-wh-bLz">
+                                        <rect key="frame" x="178" y="99" width="244" height="102"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="75"/>
                                         <state key="normal" title="Master">
@@ -43,7 +43,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2X-JZ-pOc">
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIO-Gg-paK">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIO-Gg-paK">
                                         <rect key="frame" x="198" y="99" width="205" height="102"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="75"/>
@@ -103,18 +103,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVQ-cW-VZt">
-                                <rect key="frame" x="40" y="173" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVQ-cW-VZt">
+                                <rect key="frame" x="212" y="249" width="176" height="102"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="75"/>
+                                <state key="normal" title="Sync">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="sync:" destination="oek-er-QYd" eventType="touchUpInside" id="Jsh-Rc-3X6"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.51432526111602783" green="0.33934256434440613" blue="0.67351788282394409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TVQ-cW-VZt" firstAttribute="centerY" secondItem="y9K-Ib-Rwh" secondAttribute="centerY" id="Ffu-D8-lWT"/>
+                            <constraint firstItem="TVQ-cW-VZt" firstAttribute="centerX" secondItem="y9K-Ib-Rwh" secondAttribute="centerX" id="ZzV-ut-VjU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="syncButton" destination="TVQ-cW-VZt" id="gkc-jh-Lhu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z2D-a2-WaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,8 +158,21 @@
                     <view key="view" contentMode="scaleToFill" id="6s7-2V-fbC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Client" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7i-lw-0ue">
+                                <rect key="frame" x="207" y="255" width="187" height="90"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                <color key="textColor" red="0.99990516901016235" green="1" blue="0.99987047910690308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.28163740038871765" green="0.60341674089431763" blue="0.84680145978927612" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="K7i-lw-0ue" firstAttribute="centerY" secondItem="6s7-2V-fbC" secondAttribute="centerY" id="ZkG-JA-faI"/>
+                            <constraint firstItem="K7i-lw-0ue" firstAttribute="centerX" secondItem="6s7-2V-fbC" secondAttribute="centerX" id="h1X-t8-Pdb"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YNA-6a-DMt" userLabel="First Responder" sceneMemberID="firstResponder"/>
