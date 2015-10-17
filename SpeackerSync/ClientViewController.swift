@@ -72,14 +72,16 @@ class ClientViewController: UIViewController, EZMicrophoneDelegate, EZAudioFFTDe
     
     //MARK: Got sync
     func syncDone() {
-        let path = NSBundle.mainBundle().pathForResource("jugendhackt", ofType: "mp3")
-        let url = NSURL(fileURLWithPath: path!)
-        PlayerManager.sharedPlayerManager.play(url)
-        resetCache()
+        if let path = NSBundle.mainBundle().pathForResource("jugendhackt", ofType: "mp3") {
+            let url = NSURL(fileURLWithPath: path)
+            PlayerManager.sharedPlayerManager.play(url)
+            resetCache()
+        }
+        
     }
     
     func sync() {
-        NSTimer.scheduledTimerWithTimeInterval(SSKToneLength + 1.25, target: self, selector: "syncDone", userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(SSKToneLength + 1.5, target: self, selector: "syncDone", userInfo: nil, repeats: false)
     }
 
     //MARK: Microphone

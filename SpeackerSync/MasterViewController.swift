@@ -70,7 +70,7 @@ class MasterViewController: UIViewController {
             return
         }
         playSound()
-        timer = NSTimer.scheduledTimerWithTimeInterval(SSKToneLength + 1.5, target: self, selector: "playSound", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(SSKToneLength + 1, target: self, selector: "playSound", userInfo: nil, repeats: true)
     }
     
     func playSound() {
