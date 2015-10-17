@@ -9,3 +9,4 @@
 import Foundation
 
 let SSKFrequency:Int32 = 5000
+let SSKToneLength = 2

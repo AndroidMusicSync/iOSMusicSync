@@ -10,26 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func sync(sender: AnyObject) {
-        sync()
-    }
+    //MARK: Actions
     
-    let wrapper = WaveToneGeneratorWrapper()
     
+    //MARK: Outlets
+    
+    
+    //MARK: Attributes
+    
+    
+    //MARK: Main
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-    func sync() {
-        wrapper.playFrequency(SSKFrequency, onChannel: 0, forDuration: 2)
-    }
-
 
 }
 

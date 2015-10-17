@@ -3,3 +3,4 @@
 //
 
 #import "WaveToneGeneratorWrapper.h"
+#import "EZAudio.h"

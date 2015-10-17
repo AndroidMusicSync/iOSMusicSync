@@ -10,3 +10,9 @@ Version 1.0 (2)
 
 Version 1.0 (3)
 - Fixed type bug
+
+Version 1.0 (4)
+- Decieded between client and master
+- Added client view
+- Added client software
+- Added calling sync if client got tone signal
