@@ -14,8 +14,8 @@ class MasterViewController: UIViewController {
     @IBAction func sync(sender: AnyObject) {
         if !isPlaying {
             sync()
+            syncStatusChanged()
         }
-        syncButton.enabled = !isPlaying
     }
     
     //MARK: Outlets
@@ -49,12 +49,18 @@ class MasterViewController: UIViewController {
         PlayerManager.sharedPlayerManager.stop()
     }
     
+    //MARK: Sync Button
+    func syncStatusChanged() {
+        isPlaying = !isPlaying
+        syncButton.enabled = isPlaying
+    }
+    
     //MARK: Done Sync
     func syncDone() {
-        let path = NSBundle.mainBundle().pathForResource("simple-drum-beat", ofType: "mp3")
-        let url = NSURL(fileURLWithPath: path!)
+        guard let path = NSBundle.mainBundle().pathForResource("simple-drum-beat", ofType: "mp3") else { return }
+        let url = NSURL(fileURLWithPath: path)
         PlayerManager.sharedPlayerManager.play(url)
-        isPlaying = false
+        syncStatusChanged()
     }
     
     //MARK: Sync
@@ -69,8 +75,10 @@ class MasterViewController: UIViewController {
         playNumber++
         if let timer = timer where playNumber > 2 {
             timer.invalidate()
+            
             playNumber = 0
-            NSTimer.scheduledTimerWithTimeInterval(SSKToneLength + 1.05, target: self, selector: "syncDone", userInfo: nil, repeats: false)
+            
+            NSTimer.scheduledTimerWithTimeInterval(SSKToneLength, target: self, selector: "syncDone", userInfo: nil, repeats: false)
         }
     }
 

@@ -9,9 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    //MARK: Actions
-    
     
     //MARK: Outlets
     @IBOutlet weak var iconImage: UIImageView! {
@@ -22,10 +19,6 @@ class ViewController: UIViewController {
             iconImage.layer.borderColor = UIColor.whiteColor().CGColor
         }
     }
-    
-    
-    //MARK: Attributes
-    
     
     //MARK: Main
     override func viewDidLoad() {

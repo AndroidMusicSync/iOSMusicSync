@@ -4,3 +4,4 @@
 
 #import "WaveToneGeneratorWrapper.h"
 #import "EZAudio.h"
+#import "PulsingHaloLayer.h"

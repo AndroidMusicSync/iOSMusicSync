@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpeackerSync/ClientViewController.swift"
-            timestampString = "466783185.173637"
+            timestampString = "466789734.000598"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "fft(_:updatedWithFFTData:bufferSize:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpeackerSync/MasterViewController.swift"
-            timestampString = "466786308.079019"
+            timestampString = "466787754.231051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "sync(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpeackerSync/MasterViewController.swift"
-            timestampString = "466786308.079019"
+            timestampString = "466787754.231051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "playSound()"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpeackerSync/ClientViewController.swift"
-            timestampString = "466783185.173637"
+            timestampString = "466789734.000598"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "fft(_:updatedWithFFTData:bufferSize:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -102,49 +102,65 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpeackerSync/ClientViewController.swift"
-            timestampString = "466783185.173637"
+            timestampString = "466789734.000598"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "fft(_:updatedWithFFTData:bufferSize:)"
             landmarkType = "5">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "SpeackerSync.ClientViewController.fft (SpeackerSync.ClientViewController)(Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.EZAudioFFT&gt;, updatedWithFFTData : Swift.UnsafeMutablePointer&lt;Swift.Float&gt;, bufferSize : Swift.UInt) -&gt; ()"
                   moduleName = "SpeackerSync"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/alex/xCode/Hackatons/SpeackerSync/SpeackerSync/ClientViewController.swift"
-                  timestampString = "466779118.360063"
+                  timestampString = "466787230.97518"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
-                  offsetFromSymbolStart = "1245">
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "1308">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "SpeackerSync.ClientViewController.(fft (SpeackerSync.ClientViewController) -&gt; (Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.EZAudioFFT&gt;, updatedWithFFTData : Swift.UnsafeMutablePointer&lt;Swift.Float&gt;, bufferSize : Swift.UInt) -&gt; ()).(closure #1)"
                   moduleName = "SpeackerSync"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/alex/xCode/Hackatons/SpeackerSync/SpeackerSync/ClientViewController.swift"
-                  timestampString = "466779118.360367"
+                  timestampString = "466787230.975394"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "81"
-                  endingLineNumber = "81"
-                  offsetFromSymbolStart = "19">
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpeackerSync/WaveView.swift"
+            timestampString = "466787754.231051"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "WaveView"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -39,3 +39,10 @@ Version 1.0 (7)
 Version 1.0 (8)
 - Added waiting between sync and playing song
 - Improved design of master and client views
+
+Version 1.0 (9)
+- Improved code
+- Improved structure
+- Added Halo for the design in the client view
+- Added showing pulsinghalo layer if a height tone has recieved
+- Improved algorithm behind the syncing proccess

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA4E928C1BD2A1A60008094C /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4E928B1BD2A1A60008094C /* PulsingHaloLayer.m */; settings = {ASSET_TAGS = (); }; };
 		FA5167D71BD2499300780EE3 /* TGSineWaveToneGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5167D41BD2499300780EE3 /* TGSineWaveToneGenerator.m */; settings = {ASSET_TAGS = (); }; };
 		FA5167D81BD2499300780EE3 /* WaveToneGeneratorWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5167D61BD2499300780EE3 /* WaveToneGeneratorWrapper.m */; settings = {ASSET_TAGS = (); }; };
 		FA5167DD1BD24A7000780EE3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FA5167DC1BD24A7000780EE3 /* README.md */; settings = {ASSET_TAGS = (); }; };
@@ -60,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA4E928A1BD2A1A60008094C /* PulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingHaloLayer.h; sourceTree = "<group>"; };
+		FA4E928B1BD2A1A60008094C /* PulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingHaloLayer.m; sourceTree = "<group>"; };
 		FA5167D31BD2499300780EE3 /* TGSineWaveToneGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGSineWaveToneGenerator.h; sourceTree = "<group>"; };
 		FA5167D41BD2499300780EE3 /* TGSineWaveToneGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGSineWaveToneGenerator.m; sourceTree = "<group>"; };
 		FA5167D51BD2499300780EE3 /* WaveToneGeneratorWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveToneGeneratorWrapper.h; sourceTree = "<group>"; };
@@ -146,9 +149,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA5167D21BD2496300780EE3 /* WaveToneGenerator */ = {
+		FA4E92891BD2A1A60008094C /* PulsingHalo */ = {
 			isa = PBXGroup;
 			children = (
+				FA4E928A1BD2A1A60008094C /* PulsingHaloLayer.h */,
+				FA4E928B1BD2A1A60008094C /* PulsingHaloLayer.m */,
+			);
+			path = PulsingHalo;
+			sourceTree = "<group>";
+		};
+		FA5167D21BD2496300780EE3 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				FA4E92891BD2A1A60008094C /* PulsingHalo */,
 				FA57D5611BD269F900084E7F /* EZAudio */,
 				FA5167D31BD2499300780EE3 /* TGSineWaveToneGenerator.h */,
 				FA5167D41BD2499300780EE3 /* TGSineWaveToneGenerator.m */,
@@ -156,7 +169,7 @@
 				FA5167D61BD2499300780EE3 /* WaveToneGeneratorWrapper.m */,
 				FA5167D91BD2499F00780EE3 /* Bridge-Header.h */,
 			);
-			path = WaveToneGenerator;
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 		FA57D5601BD269F900084E7F /* VERSION */ = {
@@ -245,7 +258,7 @@
 				FA8638BA1BD23EA9006EA47A /* LaunchScreen.storyboard */,
 				FA8638BD1BD23EA9006EA47A /* Info.plist */,
 				FA57D5761BD272AE00084E7F /* simple-drum-beat.mp3 */,
-				FA5167D21BD2496300780EE3 /* WaveToneGenerator */,
+				FA5167D21BD2496300780EE3 /* Libraries */,
 			);
 			path = SpeackerSync;
 			sourceTree = "<group>";
@@ -409,6 +422,7 @@
 				FA5167D71BD2499300780EE3 /* TGSineWaveToneGenerator.m in Sources */,
 				FA57D56F1BD269F900084E7F /* EZPlot.m in Sources */,
 				FA57D5631BD269F900084E7F /* EZAudioDevice.m in Sources */,
+				FA4E928C1BD2A1A60008094C /* PulsingHaloLayer.m in Sources */,
 				FA57D56C1BD269F900084E7F /* EZAudioUtilities.m in Sources */,
 				FA57D5701BD269F900084E7F /* EZRecorder.m in Sources */,
 				FA57D53B1BD2689200084E7F /* MasterViewController.swift in Sources */,
@@ -573,7 +587,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.alexsteiner.SpeackerSync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "SpeackerSync/WaveToneGenerator/Bridge-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpeackerSync/Libraries/Bridge-Header.h";
 			};
 			name = Debug;
 		};
@@ -588,7 +602,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.alexsteiner.SpeackerSync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "SpeackerSync/WaveToneGenerator/Bridge-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpeackerSync/Libraries/Bridge-Header.h";
 			};
 			name = Release;
 		};
