@@ -8,4 +8,4 @@
 
 import Foundation
 
-let SSKFrequency = 5000
+let SSKFrequency:Int32 = 5000
