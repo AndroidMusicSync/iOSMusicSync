@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yV5-bg-MOd">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,27 +18,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZI-wh-bLz">
-                                <rect key="frame" x="20" y="72" width="48" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AbI-X9-cxN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZI-wh-bLz">
+                                        <rect key="frame" x="179" y="100" width="244" height="102"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="75"/>
+                                        <state key="normal" title="Master">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="oek-er-QYd" kind="show" id="b8D-O7-Vz3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <animations/>
-                                <state key="normal" title="Master"/>
-                                <connections>
-                                    <segue destination="oek-er-QYd" kind="show" id="b8D-O7-Vz3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIO-Gg-paK">
-                                <rect key="frame" x="76" y="72" width="40" height="30"/>
+                                <color key="backgroundColor" red="0.51432526111602783" green="0.33934256434440613" blue="0.67351788282394409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wZI-wh-bLz" firstAttribute="centerX" secondItem="AbI-X9-cxN" secondAttribute="centerX" id="cpR-VJ-oXS"/>
+                                    <constraint firstItem="wZI-wh-bLz" firstAttribute="centerY" secondItem="AbI-X9-cxN" secondAttribute="centerY" id="iIQ-KM-i2c"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2X-JZ-pOc">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIO-Gg-paK">
+                                        <rect key="frame" x="198" y="99" width="205" height="102"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="75"/>
+                                        <state key="normal" title="Client">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="kAx-DR-YDg" kind="show" id="MYi-e6-y0f"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <animations/>
-                                <state key="normal" title="Client"/>
-                                <connections>
-                                    <segue destination="kAx-DR-YDg" kind="show" id="MYi-e6-y0f"/>
-                                </connections>
-                            </button>
+                                <color key="backgroundColor" red="0.28163740038871765" green="0.60341674089431763" blue="0.84680145978927612" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dIO-Gg-paK" firstAttribute="centerX" secondItem="v2X-JZ-pOc" secondAttribute="centerX" id="5V9-me-0M8"/>
+                                    <constraint firstItem="dIO-Gg-paK" firstAttribute="centerY" secondItem="v2X-JZ-pOc" secondAttribute="centerY" id="o7w-KX-7ml"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="tLv-pC-ZH0">
+                                <rect key="frame" x="262" y="262" width="76" height="76"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tLv-pC-ZH0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1OP-jq-GOb"/>
+                            <constraint firstItem="v2X-JZ-pOc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="441-s1-Yja"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AbI-X9-cxN" secondAttribute="trailing" constant="-20" id="NAD-Kg-P8B"/>
+                            <constraint firstItem="AbI-X9-cxN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="NWb-5z-tNp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v2X-JZ-pOc" secondAttribute="trailing" constant="-20" id="Pue-HX-fci"/>
+                            <constraint firstItem="AbI-X9-cxN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Q0B-LA-W3F"/>
+                            <constraint firstItem="AbI-X9-cxN" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="Ts7-5L-GgG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="v2X-JZ-pOc" secondAttribute="bottom" id="X3T-oA-rS9"/>
+                            <constraint firstItem="v2X-JZ-pOc" firstAttribute="top" secondItem="AbI-X9-cxN" secondAttribute="bottom" id="Xbn-nX-IrY"/>
+                            <constraint firstItem="tLv-pC-ZH0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k4l-JQ-DQh"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yf2-Y9-Itt"/>
+                    <connections>
+                        <outlet property="iconImage" destination="tLv-pC-ZH0" id="WSp-Ve-Sb2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,4 +157,7 @@
             <point key="canvasLocation" x="579" y="989"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Icon" width="76" height="76"/>
+    </resources>
 </document>

@@ -11,21 +11,28 @@ import UIKit
 class MasterViewController: UIViewController {
 
     @IBAction func sync(sender: AnyObject) {
-        sync()
+        if !isPlaying {
+            sync()
+        }
     }
     
     let wrapper = WaveToneGeneratorWrapper()
     var playNumber = 0
     var timer:NSTimer?
+    var isPlaying = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -38,10 +45,12 @@ class MasterViewController: UIViewController {
         let path = NSBundle.mainBundle().pathForResource("simple-drum-beat", ofType: "mp3")
         let url = NSURL(fileURLWithPath: path!)
         PlayerManager.sharedPlayerManager.play(url)
+        isPlaying = false
     }
     
     //MARK: Sync
     func sync() {
+        isPlaying = true
         playSound()
         timer = NSTimer.scheduledTimerWithTimeInterval(SSKToneLength + 1.5, target: self, selector: "playSound", userInfo: nil, repeats: true)
     }

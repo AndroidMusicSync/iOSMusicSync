@@ -33,4 +33,5 @@ Version 1.0 (7)
 - Added icon files
 - Added stop method for player manager
 - Added stopping song if view is closed
-
+- Improved design of home view
+- Added safty for the master client for not syncing two times
