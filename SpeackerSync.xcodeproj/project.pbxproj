@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA5167D71BD2499300780EE3 /* TGSineWaveToneGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5167D41BD2499300780EE3 /* TGSineWaveToneGenerator.m */; settings = {ASSET_TAGS = (); }; };
+		FA5167D81BD2499300780EE3 /* WaveToneGeneratorWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5167D61BD2499300780EE3 /* WaveToneGeneratorWrapper.m */; settings = {ASSET_TAGS = (); }; };
+		FA5167DB1BD24A0D00780EE3 /* CHANGELOG in Resources */ = {isa = PBXBuildFile; fileRef = FA5167DA1BD24A0D00780EE3 /* CHANGELOG */; settings = {ASSET_TAGS = (); }; };
+		FA5167DD1BD24A7000780EE3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FA5167DC1BD24A7000780EE3 /* README.md */; settings = {ASSET_TAGS = (); }; };
+		FA5167DF1BD24B4700780EE3 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5167DE1BD24B4700780EE3 /* AppSettings.swift */; settings = {ASSET_TAGS = (); }; };
+		FA8638AF1BD23EA9006EA47A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8638AE1BD23EA9006EA47A /* AppDelegate.swift */; };
+		FA8638B11BD23EA9006EA47A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8638B01BD23EA9006EA47A /* ViewController.swift */; };
+		FA8638B41BD23EA9006EA47A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8638B21BD23EA9006EA47A /* Main.storyboard */; };
+		FA8638B91BD23EA9006EA47A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8638B81BD23EA9006EA47A /* Assets.xcassets */; };
+		FA8638BC1BD23EA9006EA47A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8638BA1BD23EA9006EA47A /* LaunchScreen.storyboard */; };
+		FA8638C71BD23EA9006EA47A /* SpeackerSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8638C61BD23EA9006EA47A /* SpeackerSyncTests.swift */; };
+		FA8638D21BD23EA9006EA47A /* SpeackerSyncUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8638D11BD23EA9006EA47A /* SpeackerSyncUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA8638C31BD23EA9006EA47A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA8638A31BD23EA9006EA47A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA8638AA1BD23EA9006EA47A;
+			remoteInfo = SpeackerSync;
+		};
+		FA8638CE1BD23EA9006EA47A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA8638A31BD23EA9006EA47A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA8638AA1BD23EA9006EA47A;
+			remoteInfo = SpeackerSync;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA5167D31BD2499300780EE3 /* TGSineWaveToneGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGSineWaveToneGenerator.h; sourceTree = "<group>"; };
+		FA5167D41BD2499300780EE3 /* TGSineWaveToneGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGSineWaveToneGenerator.m; sourceTree = "<group>"; };
+		FA5167D51BD2499300780EE3 /* WaveToneGeneratorWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveToneGeneratorWrapper.h; sourceTree = "<group>"; };
+		FA5167D61BD2499300780EE3 /* WaveToneGeneratorWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveToneGeneratorWrapper.m; sourceTree = "<group>"; };
+		FA5167D91BD2499F00780EE3 /* Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		FA5167DA1BD24A0D00780EE3 /* CHANGELOG */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG; sourceTree = "<group>"; };
+		FA5167DC1BD24A7000780EE3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FA5167DE1BD24B4700780EE3 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		FA8638AB1BD23EA9006EA47A /* SpeackerSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeackerSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA8638AE1BD23EA9006EA47A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA8638B01BD23EA9006EA47A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA8638B31BD23EA9006EA47A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA8638B81BD23EA9006EA47A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA8638BB1BD23EA9006EA47A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA8638BD1BD23EA9006EA47A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA8638C21BD23EA9006EA47A /* SpeackerSyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeackerSyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA8638C61BD23EA9006EA47A /* SpeackerSyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeackerSyncTests.swift; sourceTree = "<group>"; };
+		FA8638C81BD23EA9006EA47A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA8638CD1BD23EA9006EA47A /* SpeackerSyncUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeackerSyncUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA8638D11BD23EA9006EA47A /* SpeackerSyncUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeackerSyncUITests.swift; sourceTree = "<group>"; };
+		FA8638D31BD23EA9006EA47A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA8638A81BD23EA9006EA47A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA8638BF1BD23EA9006EA47A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA8638CA1BD23EA9006EA47A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA5167D21BD2496300780EE3 /* WaveToneGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				FA5167D31BD2499300780EE3 /* TGSineWaveToneGenerator.h */,
+				FA5167D41BD2499300780EE3 /* TGSineWaveToneGenerator.m */,
+				FA5167D51BD2499300780EE3 /* WaveToneGeneratorWrapper.h */,
+				FA5167D61BD2499300780EE3 /* WaveToneGeneratorWrapper.m */,
+				FA5167D91BD2499F00780EE3 /* Bridge-Header.h */,
+			);
+			path = WaveToneGenerator;
+			sourceTree = "<group>";
+		};
+		FA8638A21BD23EA9006EA47A = {
+			isa = PBXGroup;
+			children = (
+				FA5167DA1BD24A0D00780EE3 /* CHANGELOG */,
+				FA5167DC1BD24A7000780EE3 /* README.md */,
+				FA8638AD1BD23EA9006EA47A /* SpeackerSync */,
+				FA8638C51BD23EA9006EA47A /* SpeackerSyncTests */,
+				FA8638D01BD23EA9006EA47A /* SpeackerSyncUITests */,
+				FA8638AC1BD23EA9006EA47A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA8638AC1BD23EA9006EA47A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA8638AB1BD23EA9006EA47A /* SpeackerSync.app */,
+				FA8638C21BD23EA9006EA47A /* SpeackerSyncTests.xctest */,
+				FA8638CD1BD23EA9006EA47A /* SpeackerSyncUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA8638AD1BD23EA9006EA47A /* SpeackerSync */ = {
+			isa = PBXGroup;
+			children = (
+				FA5167DE1BD24B4700780EE3 /* AppSettings.swift */,
+				FA8638AE1BD23EA9006EA47A /* AppDelegate.swift */,
+				FA8638B01BD23EA9006EA47A /* ViewController.swift */,
+				FA8638B21BD23EA9006EA47A /* Main.storyboard */,
+				FA8638B81BD23EA9006EA47A /* Assets.xcassets */,
+				FA8638BA1BD23EA9006EA47A /* LaunchScreen.storyboard */,
+				FA8638BD1BD23EA9006EA47A /* Info.plist */,
+				FA5167D21BD2496300780EE3 /* WaveToneGenerator */,
+			);
+			path = SpeackerSync;
+			sourceTree = "<group>";
+		};
+		FA8638C51BD23EA9006EA47A /* SpeackerSyncTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA8638C61BD23EA9006EA47A /* SpeackerSyncTests.swift */,
+				FA8638C81BD23EA9006EA47A /* Info.plist */,
+			);
+			path = SpeackerSyncTests;
+			sourceTree = "<group>";
+		};
+		FA8638D01BD23EA9006EA47A /* SpeackerSyncUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA8638D11BD23EA9006EA47A /* SpeackerSyncUITests.swift */,
+				FA8638D31BD23EA9006EA47A /* Info.plist */,
+			);
+			path = SpeackerSyncUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA8638AA1BD23EA9006EA47A /* SpeackerSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA8638D61BD23EA9006EA47A /* Build configuration list for PBXNativeTarget "SpeackerSync" */;
+			buildPhases = (
+				FA8638A71BD23EA9006EA47A /* Sources */,
+				FA8638A81BD23EA9006EA47A /* Frameworks */,
+				FA8638A91BD23EA9006EA47A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeackerSync;
+			productName = SpeackerSync;
+			productReference = FA8638AB1BD23EA9006EA47A /* SpeackerSync.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA8638C11BD23EA9006EA47A /* SpeackerSyncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA8638D91BD23EA9006EA47A /* Build configuration list for PBXNativeTarget "SpeackerSyncTests" */;
+			buildPhases = (
+				FA8638BE1BD23EA9006EA47A /* Sources */,
+				FA8638BF1BD23EA9006EA47A /* Frameworks */,
+				FA8638C01BD23EA9006EA47A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA8638C41BD23EA9006EA47A /* PBXTargetDependency */,
+			);
+			name = SpeackerSyncTests;
+			productName = SpeackerSyncTests;
+			productReference = FA8638C21BD23EA9006EA47A /* SpeackerSyncTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA8638CC1BD23EA9006EA47A /* SpeackerSyncUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA8638DC1BD23EA9006EA47A /* Build configuration list for PBXNativeTarget "SpeackerSyncUITests" */;
+			buildPhases = (
+				FA8638C91BD23EA9006EA47A /* Sources */,
+				FA8638CA1BD23EA9006EA47A /* Frameworks */,
+				FA8638CB1BD23EA9006EA47A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA8638CF1BD23EA9006EA47A /* PBXTargetDependency */,
+			);
+			name = SpeackerSyncUITests;
+			productName = SpeackerSyncUITests;
+			productReference = FA8638CD1BD23EA9006EA47A /* SpeackerSyncUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA8638A31BD23EA9006EA47A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Alex Steiner";
+				TargetAttributes = {
+					FA8638AA1BD23EA9006EA47A = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					FA8638C11BD23EA9006EA47A = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = FA8638AA1BD23EA9006EA47A;
+					};
+					FA8638CC1BD23EA9006EA47A = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = FA8638AA1BD23EA9006EA47A;
+					};
+				};
+			};
+			buildConfigurationList = FA8638A61BD23EA9006EA47A /* Build configuration list for PBXProject "SpeackerSync" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA8638A21BD23EA9006EA47A;
+			productRefGroup = FA8638AC1BD23EA9006EA47A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA8638AA1BD23EA9006EA47A /* SpeackerSync */,
+				FA8638C11BD23EA9006EA47A /* SpeackerSyncTests */,
+				FA8638CC1BD23EA9006EA47A /* SpeackerSyncUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA8638A91BD23EA9006EA47A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8638BC1BD23EA9006EA47A /* LaunchScreen.storyboard in Resources */,
+				FA5167DB1BD24A0D00780EE3 /* CHANGELOG in Resources */,
+				FA8638B91BD23EA9006EA47A /* Assets.xcassets in Resources */,
+				FA8638B41BD23EA9006EA47A /* Main.storyboard in Resources */,
+				FA5167DD1BD24A7000780EE3 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA8638C01BD23EA9006EA47A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA8638CB1BD23EA9006EA47A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA8638A71BD23EA9006EA47A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8638B11BD23EA9006EA47A /* ViewController.swift in Sources */,
+				FA5167D71BD2499300780EE3 /* TGSineWaveToneGenerator.m in Sources */,
+				FA5167D81BD2499300780EE3 /* WaveToneGeneratorWrapper.m in Sources */,
+				FA5167DF1BD24B4700780EE3 /* AppSettings.swift in Sources */,
+				FA8638AF1BD23EA9006EA47A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA8638BE1BD23EA9006EA47A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8638C71BD23EA9006EA47A /* SpeackerSyncTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA8638C91BD23EA9006EA47A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8638D21BD23EA9006EA47A /* SpeackerSyncUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA8638C41BD23EA9006EA47A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA8638AA1BD23EA9006EA47A /* SpeackerSync */;
+			targetProxy = FA8638C31BD23EA9006EA47A /* PBXContainerItemProxy */;
+		};
+		FA8638CF1BD23EA9006EA47A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA8638AA1BD23EA9006EA47A /* SpeackerSync */;
+			targetProxy = FA8638CE1BD23EA9006EA47A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA8638B21BD23EA9006EA47A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA8638B31BD23EA9006EA47A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA8638BA1BD23EA9006EA47A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA8638BB1BD23EA9006EA47A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA8638D41BD23EA9006EA47A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA8638D51BD23EA9006EA47A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA8638D71BD23EA9006EA47A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpeackerSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.alexsteiner.SpeackerSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpeackerSync/WaveToneGenerator/Bridge-Header.h";
+			};
+			name = Debug;
+		};
+		FA8638D81BD23EA9006EA47A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpeackerSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.alexsteiner.SpeackerSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpeackerSync/WaveToneGenerator/Bridge-Header.h";
+			};
+			name = Release;
+		};
+		FA8638DA1BD23EA9006EA47A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SpeackerSyncTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.alexsteiner.SpeackerSyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeackerSync.app/SpeackerSync";
+			};
+			name = Debug;
+		};
+		FA8638DB1BD23EA9006EA47A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SpeackerSyncTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.alexsteiner.SpeackerSyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeackerSync.app/SpeackerSync";
+			};
+			name = Release;
+		};
+		FA8638DD1BD23EA9006EA47A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SpeackerSyncUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.alexsteiner.SpeackerSyncUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SpeackerSync;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FA8638DE1BD23EA9006EA47A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SpeackerSyncUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.alexsteiner.SpeackerSyncUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SpeackerSync;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA8638A61BD23EA9006EA47A /* Build configuration list for PBXProject "SpeackerSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA8638D41BD23EA9006EA47A /* Debug */,
+				FA8638D51BD23EA9006EA47A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA8638D61BD23EA9006EA47A /* Build configuration list for PBXNativeTarget "SpeackerSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA8638D71BD23EA9006EA47A /* Debug */,
+				FA8638D81BD23EA9006EA47A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA8638D91BD23EA9006EA47A /* Build configuration list for PBXNativeTarget "SpeackerSyncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA8638DA1BD23EA9006EA47A /* Debug */,
+				FA8638DB1BD23EA9006EA47A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA8638DC1BD23EA9006EA47A /* Build configuration list for PBXNativeTarget "SpeackerSyncUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA8638DD1BD23EA9006EA47A /* Debug */,
+				FA8638DE1BD23EA9006EA47A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA8638A31BD23EA9006EA47A /* Project object */;
+}
