@@ -14,7 +14,6 @@ class PlayerManager {
     private var player:AVAudioPlayer?
     
     init() {
-        
     }
     
     func play(audioFile:NSURL) {

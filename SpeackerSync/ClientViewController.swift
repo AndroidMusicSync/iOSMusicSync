@@ -34,14 +34,6 @@ class ClientViewController: UIViewController, EZMicrophoneDelegate, EZAudioFFTDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let session = AVAudioSession.sharedInstance()
-        do {
-            try session.setCategory(AVAudioSessionCategoryPlayAndRecord)
-            try session.setActive(true)
-        }
-        catch {
-        }
-        
         microphone = EZMicrophone(delegate: self)
         
         fft = EZAudioFFTRolling(windowSize: 4096, sampleRate: Float(microphone.audioStreamBasicDescription().mSampleRate), delegate: self)
