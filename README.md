@@ -3,6 +3,7 @@ By using the native Swift language the app can uses all the great features by iO
 We provied already a great UI feeling for the new iPhone 6s users with 3D touch.
 Under the hood the software is devieded in view, (modal) and controller. In the storyboard the design is defined and in the controller the algorythm stuff.
 For testing, unit and UI tests are implemented.
+The tone handling uses a low level C library.
 
 ![3D touch shortcuts](https://raw.githubusercontent.com/AndroidMusicSync/iOSMusicSync/master/SpeackerSync/Screenshots/1.png)
 

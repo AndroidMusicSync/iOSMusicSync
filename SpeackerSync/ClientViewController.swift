@@ -4,6 +4,7 @@
 //
 //  Created by Alex on 17/10/15.
 //  Copyright © 2015 Alex Steiner. All rights reserved.
+//  Waiting for signals and then playing song
 //
 
 import UIKit

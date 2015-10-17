@@ -4,6 +4,7 @@
 //
 //  Created by Alex on 17/10/15.
 //  Copyright © 2015 Alex Steiner. All rights reserved.
+//  Plays sound if the button is clicked and then starting the song
 //
 
 import UIKit
