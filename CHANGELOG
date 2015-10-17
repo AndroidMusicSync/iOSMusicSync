@@ -16,3 +16,7 @@ Version 1.0 (4)
 - Added client view
 - Added client software
 - Added calling sync if client got tone signal
+
+Verson 1.0 (5)
+- Improved sending signal tone
+- Fixed recieving signal tone

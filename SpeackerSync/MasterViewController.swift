@@ -28,15 +28,23 @@ class MasterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK: Done Sync
+    func syncDone() {
+        
+    }
+    
+    //MARK: Sync
     func sync() {
-        timer = NSTimer.scheduledTimerWithTimeInterval(Double(SSKFrequency + 1), target: self, selector: "playSound", userInfo: nil, repeats: true)
+        playSound()
+        timer = NSTimer.scheduledTimerWithTimeInterval(Double(SSKToneLength + 1), target: self, selector: "playSound", userInfo: nil, repeats: true)
     }
     
     func playSound() {
         wrapper.playFrequency(SSKFrequency, onChannel: 0, forDuration: 2)
         playNumber++
-        if let timer = timer where playNumber >= 3 {
+        if let timer = timer where playNumber > 2 {
             timer.invalidate()
+            playNumber = 0
         }
     }
 

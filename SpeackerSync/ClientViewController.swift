@@ -42,6 +42,12 @@ class ClientViewController: UIViewController, EZMicrophoneDelegate, EZAudioFFTDe
         
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        signalCount = 0
+        lastSignal = NSDate().timeIntervalSince1970
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
