@@ -82,7 +82,7 @@ class ClientViewController: UIViewController, EZMicrophoneDelegate, EZAudioFFTDe
     }
     
     func sync() {
-        NSTimer.scheduledTimerWithTimeInterval(SSKToneLength + 1.5, target: self, selector: "syncDone", userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(SSKToneLength + 1, target: self, selector: "syncDone", userInfo: nil, repeats: false)
     }
 
     //MARK: Microphone

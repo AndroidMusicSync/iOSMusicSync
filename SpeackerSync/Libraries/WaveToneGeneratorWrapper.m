@@ -38,7 +38,7 @@
         return;
     }
     self.generator->_channels[channel].frequency = frequency;
-    self.generator->_channels[channel].amplitude = 0.08;
+    self.generator->_channels[channel].amplitude = 0.2;
     
     [self.generator playForDuration:duration];
 }

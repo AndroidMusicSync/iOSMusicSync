@@ -81,8 +81,9 @@ class MasterViewController: UIViewController {
             timer.invalidate()
             
             playNumber = 0
-            
-            NSTimer.scheduledTimerWithTimeInterval(SSKToneLength + 0.5, target: self, selector: "syncDone", userInfo: nil, repeats: false)
+            dispatch_async(dispatch_get_main_queue(), {
+                NSTimer.scheduledTimerWithTimeInterval(SSKToneLength, target: self, selector: "syncDone", userInfo: nil, repeats: false)
+            })
         }
     }
 
