@@ -233,9 +233,8 @@
 				FA57D55D1BD269F900084E7F /* TPCircularBuffer.h */,
 				FA57D5601BD269F900084E7F /* VERSION */,
 			);
-			name = EZAudio;
-			path = "/Users/alex/Downloads/EZAudio-master/EZAudioExamples/OSX/EZAudioFFTExample/EZAudioFFTExample/../../../../EZAudio";
-			sourceTree = "<absolute>";
+			path = EZAudio;
+			sourceTree = "<group>";
 		};
 		FA8638A21BD23EA9006EA47A = {
 			isa = PBXGroup;
